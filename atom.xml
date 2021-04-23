@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title> - Articles</title>
+    <description>안녕하세요. 좌상헌입니다.</description>
+    <link>
+    https://JwaSangHeon.github.io</link>
+    
+      
+      <item>
+        <title>Python</title>
+        
+          <description>&lt;p&gt;이 글은 python basic 입니다.&lt;/p&gt;
+</description>
+        
+        <pubDate>Thu, 22 Apr 2021 16:40:00 +0900</pubDate>
+        <link>
+        https://JwaSangHeon.github.io/python-basic</link>
+        <guid isPermaLink="true">https://JwaSangHeon.github.io/python-basic</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Jekyll</title>
+        
+          <description>&lt;p&gt;이 글은 jekyll basic 입니다.&lt;/p&gt;
+</description>
+        
+        <pubDate>Thu, 22 Apr 2021 16:40:00 +0900</pubDate>
+        <link>
+        https://JwaSangHeon.github.io/jekyll-basic</link>
+        <guid isPermaLink="true">https://JwaSangHeon.github.io/jekyll-basic</guid>
+      </item>
+      
+    
+  </channel>
+</rss>
