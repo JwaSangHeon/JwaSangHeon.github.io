@@ -1,0 +1,169 @@
+*{
+    margin:0;
+    padding:0;
+    background-color: skyblue;
+    color: white;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.container{
+    margin: 30px 100px;
+    display:grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 6fr 1fr;
+    height: 100%;
+    grid-template-areas:
+            "header header"
+            "aside main"
+            "footer footer"
+}
+.header{
+    /*width: 90vw;*/
+    /*position: fixed;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: header;
+}
+.title{
+    font-family: 'Roboto', sans-serif;
+    /*border: 1px solid red;*/
+    /*padding-right: 700px;*/
+    /*padding-left: 5px;*/
+    color: white;
+    /*background-color: red;*/
+    font-size: 50px;
+    letter-spacing:-2px;
+    /*border-radius: 3%;*/
+}
+.menu li{
+    display: inline;
+    font-size: 20px;
+    padding-left: 10px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+li a:hover{
+    color: red;
+    transition: 0.5s;
+}
+.aside{
+    grid-area: aside;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.pic{
+    background-image: url("../picture/produce pic.png");
+    background-size: cover;
+    border: 3px solid white;
+    border-radius: 70%;
+    width: 150px;
+    height:150px;
+}
+.pic:hover{
+    border-radius: 0%;
+    transition: 0.5s;
+}
+.produce{
+    font-size: 20px;
+    margin-top: 50px;
+}
+.main{
+    grid-area: main;
+    display: flex;
+    /*margin-left: 200px;*/
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100vh;
+    /*perspective: 1000px;*/
+    /*flex-direction: row;*/
+    /*flex-wrap: wrap;*/
+}
+
+.my-pic{
+    /*background-image: url("Mypic.JPG");*/
+    /*width: 170px;*/
+    /*height: 220px;*/
+    /*background-size: cover;*/
+    /*margin-left: 100px;*/
+    /*border-radius: 70%;*/
+    width: 150px;
+    height: 170px;
+}
+.my-pic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 70%;
+}
+.about-flex1{
+    display: flex;
+    flex-direction: column;
+}
+.about-me{
+    margin-bottom: 50px;
+}
+.about-title{
+    color: #FFA07A;
+    font-size: 30px;
+    font-weight: 700;
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+}
+.strong{
+    font-size: 10px;
+    color: black;
+    margin-top: 5px;
+}
+.like{
+    margin-top: 10px;
+}
+.footer{
+    grid-area: footer;
+    text-align: center;
+}
+.contact{
+    text-align: center;
+    border-top: 2px solid gray;
+    font-size: 30px;
+}
+.email{
+    margin-top: 30px;
+    text-align: center;
+}
+.insta a:hover{
+    color: red;
+    transition: 0.5s;
+}
+@media all and (max-width: 640px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+    .produce{
+        margin-bottom: 50px;
+    }
+    .about-flex1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-title{
+        text-align: center;
+    }
+    .my-pic{
+        margin-bottom: 50px;
+    }
+
+}
